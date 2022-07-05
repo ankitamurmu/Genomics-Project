@@ -55,6 +55,9 @@ ggplot(data=merge_data2, aes(V4,V5,color = Superpopulation.code)) + geom_point(s
         axis.title.y = element_text(face = "italic", color="blue", size = 14))
 
 
+#save the pca plot 2
+ggsave("plot2.png", width = 25, height = 20, units = "cm", limitsize = FALSE, path = "D:/HackBio/Stage 3", dpi = 300)
+
 
 #pca3
 #read the eigenvec file for pca3
