@@ -28,7 +28,7 @@ merge_data1 <- merge(x= pca1,y = metadata,by.x = "V2", by.y = "Sample.name", all
 #plot with ggplot
 ggplot(data = merge_data1, aes(V3,V4,color = Superpopulation.code)) + geom_point(size = 2.5)+
   scale_color_brewer(palette = "Set1") + theme_classic() + labs (title = "PCA Plot 1")+
-  xlab("pca1") + ylab("pca2")+
+  xlab("PC1") + ylab("PC2")+
   theme(plot.title = element_text(hjust = 0.5, face = "bold", size =30),
         axis.title.x = element_text(face = "italic", color="blue", size = 14),
         axis.title.y = element_text(face = "italic", color="#993333", size = 14))
@@ -49,7 +49,7 @@ merge_data2 <- merge(x= pca2,y = metadata,by.x = "V2", by.y = "Sample.name", all
 #plot with ggplot
 ggplot(data=merge_data2, aes(V4,V5,color = Superpopulation.code)) + geom_point(size = 2.5)+
   scale_color_brewer(palette = "Dark2") + theme_classic()+ labs (title = "PCA Plot 2")+
-  xlab("pca2") + ylab("pca3")+
+  xlab("PC2") + ylab("PC3")+
   theme(plot.title = element_text(hjust = 0.5, face = "bold", size =30),
         axis.title.x = element_text(face = "italic", color="green", size = 14),
         axis.title.y = element_text(face = "italic", color="blue", size = 14))
@@ -69,7 +69,7 @@ merge_data3 <- merge(x= pca3,y = metadata,by.x = "V2", by.y = "Sample.name", all
 #plot with ggplot
 ggplot(data=merge_data3, aes(V19,V20,color = Superpopulation.code)) + geom_point(size = 2.5)+
   scale_color_brewer(palette = "Paired") + theme_classic()+ labs (title = "PCA Plot 3")+
-  xlab("pca19") + ylab("pca20")+
+  xlab("PC19") + ylab("PC20")+
   theme(plot.title = element_text(hjust = 0.5, face = "bold", size =30),
         axis.title.x = element_text(face = "italic", color="red", size = 14),
         axis.title.y = element_text(face = "italic", color="blue", size = 14))
